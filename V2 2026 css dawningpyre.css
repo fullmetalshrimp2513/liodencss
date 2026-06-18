@@ -347,7 +347,7 @@ a:hover {
 /* avatar stuff */
 {
 ::after {
-content: url('https://i.ibb.co/PZR06mv9/dawningpyre-full-image.png')!important;
+content: url('https://i.ibb.co/ZzdmtFht/dawningpyre-full-image.png')!important;
     display: block;
     position: absolute;
 }
@@ -356,7 +356,7 @@ content: url('https://i.ibb.co/PZR06mv9/dawningpyre-full-image.png')!important;
 }
 @media screen{
 #lion_image>div::after {
-content: url('https://i.ibb.co/PZR06mv9/dawningpyre-full-image.png')!important;
+content: url('https://i.ibb.co/ZzdmtFht/dawningpyre-full-image.png')!important;
 display: block;
 position: absolute!important;
 border-radius: 25px!important;
