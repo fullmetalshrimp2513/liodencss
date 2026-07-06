@@ -211,7 +211,7 @@ td.bottom a {
   text-decoration: none !important;
 }
 .inner-table .left {
-  background: linear-gradient(var(--highlight), var(--darkest));
+  background: linear-gradient(var(--highlight), var(--darkest)) !important;
   color: #ffffff;
   border: 3px solid var(--highlight);
   border-top-left-radius: 5px;
@@ -249,7 +249,7 @@ div.left {
 }
 /* friend and clan table divider bars */
 .table .left {
-  background: var(--darkest) !important;
+  background: linear-gradient(var(--highlight), var(--darkest)) !important;
 }
 /* territory description background */
 input,
