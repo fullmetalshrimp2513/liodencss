@@ -1,3 +1,11 @@
+/* ez colour list */
+:root {
+    --highlight: #f98b55;
+    --highlightthin: rgba(249,139,085,0.5);
+    --darkest: rgb(027,025,023);
+    --darkestthin: rgba(027,025,023,0.75);
+}
+
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -10,50 +18,50 @@ body {
 
 /* right third */
 .container.main {
-  background: rgba(027,025,023,0.75);
+  background: var(--darkestthin);
   border: none;
   box-shadow: none;
-  border: 3px solid #f98b55;
+  border: 3px solid var(--highlight);
   border-radius: 5px;
-  color: #ffffff;
+  color: white;
 }
 /* left two third */
 .col-md-9 {
   background: none;
   border-right: none;
-  color: #ffffff;
+  color: white;
 }
 /* welcome back ... */
 .topbar {
-  background: rgb(027,025,023);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border: 3px solid var(--highlight);
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top: none;
 }
 /* crossroad topbar */
 .navbar {
-  background: rgba(027,025,023,1);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
-  border-bottom: 3px solid #f98b55;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border-bottom: 3px solid var(--highlight);
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
 /* crossroads text */
 .navbar li a {
-  color: #ffffff !important;
+  color: white !important;
 }
 /* crossroads buttons */
 .navbar li a:hover {
-  background: rgba(249,139,085,0.5) !important;
+  background: var(--highlightthin) !important;
   color: #ffffff;
   border-radius: 25px;
 }
 /* home/den links */
 .breadcrumb {
-  background: rgba(027,025,023,1);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  border: 3px solid var(--highlight);
   border-radius: 5px;
 }
 .breadcrumb .active {
@@ -68,9 +76,9 @@ body {
 }
 /* bookmark button */
 input.floatright, input.floatright:hover {
-  background: rgba(027,025,023,1);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%)!important;
-  border: 3px solid #f98b55 !important;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border: 3px solid var(--highlight) !important;
   border-radius: 5px;
   color: #ffffff;
   text-shadow: none;
@@ -79,40 +87,40 @@ input.floatright, input.floatright:hover {
 }
 /* switch account button */
 button.button, button.button:hover {
-  background: rgba(027,025,023,1);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border: 3px solid var(--highlight);
   border-radius: 5px;
   color: #ffffff;
   text-shadow: none;
 }
 /* other buttons */
 input[type="button"] {
-  background: rgba(027,025,023,1);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
-  border: 3px solid #f98b55 !important;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border: 3px solid var(--highlight) !important;
   border-radius: 5px;
   text-shadow: none;
   color: #FFFFFF !important;
 }
 input[type="button"]:hover {
-  background: rgba(249, 139, 85,1) !important;
-  border: 3px solid #f98b55;
+  background: var(--highlight) !important;
+  border: 3px solid var(--highlight);
   text-shadow: none;
   color: #ffffff !important;
   border-radius: 5px;
 }
 input[type="submit"]:hover {
-  background: rgba(249, 139, 85,1) !important;
-  border: 3px solid #f98b55;
+  background: var(--highlight) !important;
+  border: 3px solid var(--highlight);
   text-shadow: none;
   color: #ffffff!important;
   border-radius: 5px;
 }
 input[type="submit"] {
-  background: rgba(027,025,023,1);
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
-  border: 3px solid #f98b55 !important;
+  background: var(--darkest);
+  background: linear-gradient(var(--highlight), var(--darkest));
+  border: 3px solid var(--highlight) !important;
   border-radius: 5px;
   text-shadow: none;
   color: #FFFFFF !important;
@@ -132,41 +140,42 @@ input[type="submit"] {
 }
 /* headers */
 h1 {
-  color: #f98b55;
+  color: var(--highlight);
   font-size: 50px;
   text-align: center;
   font-family:'Montserrat';
 }
 h2 {
-  color: #f98b55;
+  color: var(--highlight);
   font-size: 25px;
   text-align:center;
 }
 h3 {
-  color: #f98b55;
+  color: var(--highlight);
   text-align:center;
   font-size: 15px;
 }
 /* right side panels */
 .panel {
-  background: rgba(027,025,023,1) !important;
+  background: var(--darkest) !important;
   box-shadow: none !important;
   text-shadow: none !important;
-  border: 3px solid #f98b55 !important;
+  border: 3px solid var(--highlight) !important;
   border-radius: 5px;
   color: #ffffff;
 }
 .sidebar h3 {
-    color: #f98b55;
+    color: var(--highlight);
 }
 /* stat bars */
 .progress {
-  background: rgba(249, 139, 85,0.5);
+  background: var(--highlightthin);
   border: none;
     border-radius: 5px;
 }
 .progress-bar {
-  background: linear-gradient(270deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
+  background: var(--darkest);
+  background: linear-gradient(270deg,var(--highlight), var(--darkest));
   border-radius: 0px;
 }
 .progress div {
@@ -174,16 +183,16 @@ h3 {
 }
 /* info table */
 .table {
-  background: rgba(027,025,023,1) !important;
-  border: 3px solid #f98b55;
+  background: var(--darkest) !important;
+  border: 3px solid var(--highlight);
   border-radius: 5px !important;
   border-collapse: separate;
 }
 /* info table - king name/title, mutation count */
 .table .top, .table th {
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
+  background: linear-gradient(var(--highlight), var(--darkest));
   color: #ffffff;
-  border: 3px solid #f98b55;
+  border: 3px solid var(--highlight);
   border-top: none;
     border-right: none;
     border-left: none;
@@ -191,9 +200,9 @@ h3 {
 
 }
 .table .bottom, .table th {
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%)!important;
+  background: linear-gradient(var(--highlight), var(--darkest));
   color: #ffffff;
-  border: 3px solid #f98b55 !important;
+  border: 3px solid var(--highlight) !important;
   border-bottom: none !important;
     border-right: none !important;
     border-left: none !important;
@@ -203,52 +212,52 @@ td.bottom a {
   text-decoration: none !important;
 }
 .inner-table .left {
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%);
+  background: linear-gradient(var(--highlight), var(--darkest));
   color: #ffffff;
-  border: 3px solid #f98b55;
+  border: 3px solid var(--highlight);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 .inner-table .right {
-  background: rgba(027,025,023,1);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  border: 3px solid var(--highlight);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-left: none;
-  color: #f98b55;
+  color: var(--highlight);
 }
 /* dens backgrounds */
 .cave-grid,
 .mound-grid {
-  background: rgba(027,025,023,1);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  border: 3px solid var(--highlight);
   border-radius: 5px;
   color: #ffffff;
 }
 /* dynasty panels */
 .feature,
 div.left {
-  background: rgba(027,025,023,1);
-  border: 3px solid #f98b55;
+  background: var(--darkest);
+  border: 3px solid var(--highlight);
   border-radius: 5px;
 }
 /* feed all, play all */
 .feature {
-  background: rgba(027,025,023,1) !important;
-  border: 4px solid #f98b55 !important;
+  background: var(--darkest) !important;
+  border: 4px solid var(--highlight) !important;
   border-radius: 5px !important;
   color: #ffffff !important;
 }
 /* friend and clan table divider bars */
 .table .left {
-  background: linear-gradient(0deg, rgba(027,025,023,1) 0%, rgba(069,047,035,1) 25%, rgba(170,099,063,1) 75%, rgb(249,139,085,1) 100%) !important;
+  background: var(--darkest) !important;
 }
 /* territory description background */
 input,
 select,
 textarea {
-  background: rgba(249, 139, 85,0.5);
-  border: 3px solid #f98b55;
+  background: var(--highlightthin);
+  border: 3px solid var(--highlight);
   border-radius: 5px;
   box-shadow: none;
   text-shadow: none;
@@ -262,7 +271,7 @@ div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
 /* link colour */
 a:link,
 a:visited {
-  color: #f98b55 !important;
+  color: var(--highlight) !important;
 }
 a:hover {
   color: #ffffff !important;
@@ -280,7 +289,7 @@ a:hover {
 /* regular boxes */
 .smallbox {
   float: center;
-  background: rgba(027,025,023,1);
+  background: var(--darkest);
   color: #ffffff;
   padding: 15px;
   border: 3px dashed #ffffff;
@@ -303,7 +312,7 @@ a:hover {
 /* hover boxes */
 .hoverbox1 {
   float: center;
-  background: rgba(027,025,023,1);
+  background: var(--darkest);
   color: #ffffff;
   padding: 15px;
   border: 3px dashed #ffffff;
@@ -321,7 +330,7 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  background: rgba(027,025,023,1);
+  background: var(--darkest);
   color: #ffffff;
   padding: 10px;
   border: 3px dashed #ffffff;
@@ -338,10 +347,10 @@ a:hover {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #261402 !important;
+  background: var(--darkest) !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f98b55;
+  background: var(--highlight);
   border-radius: 3px;
 }
 /* avatar stuff */
@@ -376,7 +385,7 @@ height: 78.2%;
 }
 /* player icon */
 table#player img {
-  border: 4px solid #f98b55;
+  border: 4px solid var(--highlight);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -411,13 +420,13 @@ hr {
 /* Codes provided by LioDev/Hok-Z|𝑴𝒂𝒍𝒆𝒏𝒊𝒂 (#41458)*/
 
 #commentBox {
-  background: rgba(027,025,023,1);
+  background: var(--darkest);
   height: 300px !important; 
   width: 75%px;
   padding: 0px!important;
 }
 div.comment {
-border-bottom: 2px solid #f98b55;
+border-bottom: 2px solid var(--highlight);
 }
 small.text-muted {
 color: #FFFFFF;
