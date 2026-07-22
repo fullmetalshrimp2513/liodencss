@@ -3,8 +3,11 @@
     --background: rgb(255,219,118);
 }
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap') !important;
-
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* main den background */
 body {
   background: url('https://i.ibb.co/ByXDNvM/lioden-brown-bg.png') center center fixed;
