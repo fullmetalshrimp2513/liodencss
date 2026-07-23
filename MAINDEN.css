@@ -211,7 +211,7 @@ input[type="submit"] {
     border-radius: 25px;
     box-shadow: 5px 5px 10px -3px var(--deep);
 }
-.table .bottom, .table th {
+.table .bottom, .table th, #about .bottom {
     background: var(--deep);
     border-radius: 25px;
 }
@@ -226,7 +226,7 @@ td.bottom a {
     text-shadow: 1px 1px 3px var(--bgtwo);
     font-weight: bold !important;
 }
-.inner-table .right {
+.inner-table .right, #about .auto .right {
     background-image: linear-gradient(var(--bgone), var(--bgtwo))!important;
     box-shadow: 5px 5px 10px -3px var(--deep);
     border-radius: 25px;
