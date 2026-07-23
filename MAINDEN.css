@@ -226,7 +226,7 @@ td.bottom a {
     font-weight: bold !important;
 }
 .inner-table .right {
-    background-image: linear-gradient(var(--bgone), var(--bgtwo));
+    background-image: linear-gradient(var(--bgone), var(--bgtwo))!important;
     box-shadow: 5px 5px 10px -3px var(--deep);
     border-radius: 25px;
     color: var(--deep);
