@@ -1,6 +1,7 @@
 /* ez colour list */
 :root {
     --highlight: rgb(255,219,118);
+    --bgzero: rgba(219,201,183,0.3);
     --bgone: rgb(166,135,105);
     --bgtwo: rgb(128,097,068);
     --bgthree: rgb(064,034,006);
@@ -32,7 +33,7 @@ a:hover {
 
 /* right third */
 .container.main {
-    background-image: linear-gradient(var(--bgone), var(--bgtwo));
+    background: var(--bgzero);
     box-shadow: none;
     border-radius: 25px;
     border: none;
@@ -40,7 +41,7 @@ a:hover {
 }
 /* left two thirds */
 .col-md-9 {
-    background-image: linear-gradient(var(--bgone), var(--bgtwo));
+    background: none;
     color: var(--deep);
     border: none;
     border-radius: 25px;
@@ -197,7 +198,7 @@ input[type="submit"] {
 }
 /* info table backgrounds */
 .table {
-    background-image: linear-gradient(var(--bgtwo), var(--bgthree)) !important;
+    background: var(--bgthreecave) !important;
     border: none;
     border-radius: 25px !important;
     border-collapse: separate;
@@ -226,6 +227,7 @@ h1 {
     text-decoration: underline;
     text-align: center !important;
     text-shadow: 1px 1px 3px var(--bgthree);
+    font-size: 45px;
 }
 h2 {
     color: var(--highlight);
@@ -335,13 +337,14 @@ h3 {
     box-shadow: none;
 }
 .right_odd {
-    background: var(--bgthreecave) !important;
+    background: var(--bgthree) !important;
 }
 #pride .right {
-    background: var(--bgtwo) !important;
+    background: var(--deep) !important;
 }
-small {
+h1 small, small {
     color: var(--soft)!important;
+    text-decoration: none !important;
 }
 .center.b {
     background: none;
@@ -351,4 +354,11 @@ small {
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 5px 5px 10px -3px var(--deep);
+}
+.red {
+    background: var(--highlight);
+    color: var(--deep);
+    font-weight: bold !important;
+    border-radius: 25px !important;
+    box-shadow: 5px 5px 10px -3px var(--deep) !important;
 }
