@@ -212,7 +212,8 @@ input[type="submit"] {
     box-shadow: 5px 5px 10px -3px var(--deep);
 }
 .table .bottom, .table th {
-    background: none;
+    background: var(--deep);
+    border-radius: 25px;
 }
 td.bottom a {
     text-decoration: none !important;
