@@ -1,7 +1,6 @@
 /* ez colour list */
 :root {
     --highlight: rgb(255,219,118);
-	--bgzero: rgb(038,020,002,0.4);
     --bgone: rgb(166,135,105);
     --bgtwo: rgb(128,097,068);
     --bgthree: rgb(064,034,006);
@@ -32,7 +31,7 @@ a:hover {
 
 /* right third */
 .container.main {
-    background-image: var(--bgzero);
+    background-image: linear-gradient(var(--bgone), var(--bgtwo));
     box-shadow: none;
     border-radius: 25px;
     border: none;
@@ -40,7 +39,7 @@ a:hover {
 }
 /* left two thirds */
 .col-md-9 {
-    background-image: var(--bgzero);
+    background-image: linear-gradient(var(--bgone), var(--bgtwo));
     color: var(--deep);
     border: none;
     border-radius: 25px;
