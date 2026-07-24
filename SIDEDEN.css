@@ -1,0 +1,423 @@
+/* ez colour list */
+:root {
+    --highlight: rgb(249,139,86);
+    --bgzero: rgba(215,209,205,0.3);
+    --bgone: rgb(151,138,131);
+    --bgtwo: rgb(112,099,092);
+    --bgthree: rgb(045,038,034);
+    --deep: rgb(21,16,14);
+    --soft: rgb(215,209,205);
+    --success1: rgb(116,160,99);
+    --success2: rgb(57,103,40);
+    --danger1: rgb(219,134,134);
+    --danger2: rgb(173,66,66);
+}
+/* main den background */
+body {
+  background: url('https://i.ibb.co/GQgQCr7j/lioden-grey-bg.png') center center fixed;
+  background-size: 100%;
+}
+body {
+      font-family: 'Trebuchet MS', sans-serif;
+}
+/* links colour */
+a:link,
+a:visited {
+  color: var(--highlight) !important;
+}
+a:hover {
+  color: var(--soft) !important;
+}
+/* background panels */
+
+/* right third */
+.container.main {
+    background: var(--bgzero);
+    box-shadow: none;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 10px var(--deep);
+}
+/* left two thirds */
+.col-md-9 {
+    background: none;
+    color: var(--deep);
+    border: none;
+    border-radius: 25px;
+}
+/* welcome back... */
+.topbar {
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    color: var(--soft);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px var(--deep);
+}
+/* crossroads bar */
+.navbar {
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    border-radius: 25px;
+    color: var(--soft);
+}
+.navbar li a {
+    color: var(--soft) !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px var(--deep);
+}
+/* crossroads hover */
+.navbar li a:hover {
+    color: var(--deep) !important;
+    background-image: linear-gradient(var(--highlight), var(--bgthree)) !important;
+    border-radius: 25px !important;
+    text-shadow: 1px 1px 3px var(--highlight);
+}
+/* minibar */
+.breadcrumb {
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+.breadcrumb .active {
+    color: var(--soft) !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px var(--deep);
+}
+/* CSS credit */
+.breadcrumb::after {
+    content: "Custom CSS by Rhy#254310";
+    color: var(--soft);
+    position: absolute;
+    right: 13%;
+}
+/* right pannels */
+.panel {
+    background-image: linear-gradient(var(--bgthree), var(--deep)) !important;
+    border: none !important;
+    box-shadow: 5px 5px 10px -3px var(--deep) !important;
+    border-radius: 25px !important;
+    color: var(--soft) !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 3px var(--deep);
+}
+.sidebar h3 {
+    color: var(--soft)!important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 3px var(--deep);
+}
+/* stat bars */
+.progress {
+  background: var(--deep);
+  border: none;
+  border-radius: 25px;
+}
+.progress-bar {
+  background: linear-gradient(270deg,var(--bgone), var(--bgtwo));
+  border-radius: 0px;
+}
+.progress div {
+  color: var(--soft) !important;
+}
+/* switch account button */
+button.button {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    color: var(--soft);
+    text-shadow: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+button.button:hover {
+    background-image: linear-gradient(var(--highlight), var(--bgthree)) !important;
+    border: none;
+    border-radius: 25px;
+    color: var(--deep);
+    text-shadow: 1px 1px 3px var(--highlight);
+}
+/* bugbox button */
+.btn-default {
+    background-image: linear-gradient(var(--bgthree), var(--deep))!important;
+    color: var(--soft)!important;
+    text-shadow: none;
+    border: none !important;
+    border-radius: 25px !important;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+/* other buttons */
+input[type="button"] {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    color: var(--soft);
+    text-shadow: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+input[type="button"]:hover {
+    background-image: linear-gradient(var(--highlight), var(--bgthree)) !important;
+    border: none;
+    border-radius: 25px;
+    color: var(--deep);
+    text-shadow: 1px 1px 3px var(--highlight);
+}
+input[type="submit"]:hover {
+    background-image: linear-gradient(var(--highlight), var(--bgthree)) !important;
+    border: none;
+    border-radius: 25px;
+    color: var(--deep);
+    text-shadow: 1px 1px 3px var(--highlight);
+}
+input[type="submit"] {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    color: var(--soft);
+    text-shadow: none;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+/* alerts */
+.alert-success {
+    background-image: linear-gradient(var(--success1), var(--success2));
+    border-radius: 25px;
+    border: none;
+    color: var(--deep);
+    font-weight: bold;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    text-shadow: 1px 1px 3px var(--success2);
+}
+.alert-danger {
+    background-image: linear-gradient(var(--danger1), var(--danger2));
+    border-radius: 25px;
+    border: none;
+    color: var(--deep);
+    font-weight: bold;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    text-shadow: 1px 1px 3px var(--danger2);
+}
+/* info table backgrounds */
+.table {
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree)) !important;
+    border: none;
+    border-radius: 25px !important;
+    border-collapse: separate;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    color: var(--soft);
+}
+/* info table - king name/title, mutation count */
+.table .top, .table th {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    color: var(--soft);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+.table .bottom, .table th, #about .bottom {
+    background: var(--deep);
+    border-radius: 25px;
+}
+td.bottom a {
+    text-decoration: none !important;
+}
+.inner-table .left {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    border-radius: 25px;
+    color: var(--soft);
+    text-shadow: 1px 1px 3px var(--bgtwo);
+    font-weight: bold !important;
+}
+.inner-table .right, #about .auto .right {
+    background-image: linear-gradient(var(--bgone), var(--bgtwo))!important;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    border-radius: 25px;
+    color: var(--deep);
+    text-shadow: 1px 1px 3px var(--bgtwo);
+    font-weight: bold !important;
+}
+/* player image */
+.right .right > img {
+    border-radius: 25px !important;
+}
+/* BIG LION IMAGE */
+{
+::after {
+content: url('https://i.ibb.co/ZzdmtFht/dawningpyre-full-image.png')!important;
+    display: block;
+    position: absolute;
+}
+    /* code below vaugely created from Tawny's broad advice of literally "you'd essentially just "hide" the orignal lion image, and then use an ::after element to insert the larger screenshot :D" and nearly 3 hours of digging through multiple free code help websites and lots and lots of lioden forum posts */
+    /* first part does lion image move and replace */
+}
+@media screen{
+#lion_image>div::after {
+content: url('https://i.ibb.co/ZzdmtFht/dawningpyre-full-image.png')!important;
+display: block;
+position: absolute!important;
+border-radius: 25px!important;
+overflow: hidden;
+height: 78.2%;
+}
+}
+@media screen{
+	div#lion_image {
+	border-radius: 25px !important;
+	margin-left: 90px !important;
+}
+}
+#lion_image > div {
+	width: 650px !important;
+	border-radius: 25px !important;
+}
+/* this second part moves the table to below the image instead of to the right of it and for some reason don't ask why i don't know but it has to be below the player icon at this point */
+.right_odd {
+  background: none !important;
+}
+table#about {
+	.inner-table {
+	margin-top:515px;
+	margin-left:-635px;
+    margin-bottom:5px;
+	}
+}
+/* hr codes provided by Pandora #144118 and Kat .:Red Lion of Voltron:. #94329 */
+hr {
+  display: none;
+}
+/* headers */
+h1 {
+    color: var(--soft);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center !important;
+    text-shadow: 1px 1px 3px var(--bgthree);
+    font-size: 45px;
+}
+h2 {
+    color: var(--highlight);
+    font-weight: bold;
+    text-align: center !important;
+    text-shadow: 1px 1px 3px var(--bgthree);
+}
+h3 {
+    color: var(--bgone);
+    font-weight: bold;
+    text-align: center !important;
+    text-shadow: 1px 1px 3px var(--bgthree);
+}
+/* BOXES AT LAST */
+.boxcontainer {
+    height: auto;
+    width: auto;
+    padding: 25px;
+    overflow: auto;
+    display: inline;
+}
+/* smallbox = intro box, fit to contents */
+.smallbox {
+    float: center;
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    color: var(--soft);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    height: auto;
+    width: 75%;
+    overflow: auto;
+    text-shadow: 1px 1px 3px var(--deep);
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+/* sidebox1 = left | sidebox2 = right FOR CLAM ADS */
+.sidebox1 {
+    position: relative;
+    left: 108px;
+    float: left;
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    color: var(--soft);
+    padding: 10px;
+    border-radius: 25px;
+    width: 35%;
+    height: auto;
+    text-shadow: 1px 1px 3px var(--deep);
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+.sidebox2 {
+    position: relative;
+    right: 108px;
+    float: right;
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    color: var(--soft);
+    padding: 10px;
+    border-radius: 25px;
+    width: 35%;
+    height: auto;
+    text-shadow: 1px 1px 3px var(--deep);
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+/* hover boxes */
+.hoverbox1 {
+    float: center;
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree));
+    color: var(--soft);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    height: 86px;
+    width: 50%;
+    overflow: hidden;
+    text-shadow: 1px 1px 3px var(--deep);
+    box-shadow: 5px 5px 10px -3px var(--deep);
+    position: relative;
+    top: 35px;
+}
+.hoverbox1:hover {
+    height: auto;
+    width: 50%;
+}
+/* cave, den, etc. grind backgrounds */
+.cave-grid, .mound-grid, .dynastylist .left, .col-sm-4 .left, form div.left {
+    background: var(--deep) !important;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+/* friend and clan table divider bars */
+.table .left {
+    background-image: linear-gradient(var(--bgthree), var(--deep));
+    border-radius: 25px;
+    color: var(--soft);
+    text-shadow: 1px 1px 3px var(--deep);
+}
+/* FAPA */
+.feature {
+    background-image: linear-gradient(var(--bgtwo), var(--bgthree)) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    box-shadow: 5px 5px 10px -3px var(--deep) !important;
+}
+/* territory typing box */
+.right textarea, .right input, .right select {
+    background: var(--deep);
+    border: none;
+    border-radius: 10px;
+    color: var(--soft);
+}
+/* comment box */
+.commentText .text-muted {
+    color: var(--soft);
+}
+#commentBox {
+    background: var(--bgtwo);
+    border: none;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
+.commentText {
+    color: var(--deep)!important;
+}
+#comment {
+    background: var(--bgthree);
+    border: none;
+    color: var(--soft)!important;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px -3px var(--deep);
+}
