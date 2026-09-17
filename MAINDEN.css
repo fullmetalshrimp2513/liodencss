@@ -242,7 +242,7 @@ td.bottom a {
 /* BIG LION IMAGE */
 {
 ::after {
-content: url('https://i.ibb.co/PsC7H0Nx/morningmire-full-image.png')!important;
+content: url('https://i.ibb.co/LzYKNJsD/morningmire-full-image.png')!important;
     display: block;
     position: absolute;
 }
@@ -251,7 +251,7 @@ content: url('https://i.ibb.co/PsC7H0Nx/morningmire-full-image.png')!important;
 }
 @media screen{
 #lion_image>div::after {
-content: url('https://i.ibb.co/PsC7H0Nx/morningmire-full-image.png')!important;
+content: url('https://i.ibb.co/LzYKNJsD/morningmire-full-image.png')!important;
 display: block;
 position: absolute!important;
 border-radius: 25px!important;
